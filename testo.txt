@@ -1,0 +1,43 @@
+## Repo
+`php-oop-2`
+
+## Todo
+### Day 1
+Immaginare quali sono le classi necessarie per creare uno shop online con le seguenti caratteristiche:
+
+- L'e-commerce vende **prodotti** per animali
+- I prodotti sono categorizzati, le **categorie** sono `Cani` o `Gatti`
+- I prodotti saranno oltre al **cibo**, anche **giochi**, **cucce**, etc
+
+Stampiamo delle card contenenti i dettagli dei **prodotti**, come `immagine`, `titolo`, `prezzo`, `icona della categoria` ed il `tipo di articolo` che si sta visualizzando (prodotto, cibo, gioco, cuccia, ecc).
+
+### Day 2
+Aggiungere almeno un `trait` ed un `exception` (con al relativa gestione attraverso un `try-catch`) al vostro *shop*.
+
+### ~~[OPTIONAL] BONUS~~
+~~Il **cliente** potrà sia comprare i prodotti come ospite, senza doversi registrarsi nello store, oppure può iscriversi e creare un **account** per ricevere cosi il 20% di sconto.~~
+
+~~Il cliente effettua il pagamento dei prodotti nel **carrello** con la **carta di credito**, che non deve essere scaduta.~~
+
+
+
+Prodotto
+    Attributi:
+    ID Prodotto: Un identificativo unico per ogni prodotto.
+        Nome: Il nome del prodotto.
+        Descrizione: Una descrizione dettagliata del prodotto.
+        Prezzo: Il prezzo di vendita del prodotto.
+        Categoria: La categoria di appartenenza del prodotto (es. Cani, Gatti).
+        QuantitàInMagazzino: La quantità disponibile in magazzino.
+    Metodi:
+        AggiornaQuantità(): Per aggiornare la quantità in magazzino.
+        VisualizzaInfoProdotto(): Per mostrare le informazioni dettagliate del prodotto.
+Categoria
+    Attributi:
+        ID Categoria: Un identificativo unico per ogni categoria.
+        NomeCategoria: Il nome della categoria (es. Cani, Gatti).
+        Descrizione: Una breve descrizione della categoria.
+    Metodi:
+        AggiungiProdotto(Prodotto): Per aggiungere un prodotto alla categoria.
+        RimuoviProdotto(Prodotto): Per rimuovere un prodotto dalla categoria.
+        ElencoProdotti(): Per ottenere un elenco dei prodotti nella categoria.
